@@ -1,0 +1,47 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income-Deduct</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h2>Income-Deduct Expense</h2>
+    <div class="container">
+      <h4>Net...</h4>
+      <h1 id="balance">฿0.00</h1>
+      <div class="income-expense-container">
+        <div>
+          <h4>income</h4>
+          <p id="money-plus" class="money plus">฿5000</p>
+        </div>
+        <div>
+          <h4>deduct</h4>
+          <p id="money-minus" class="money minus">฿200</p>
+        </div>
+      </div>
+      <h3>List History</h3>
+      <ul id="list" class="list"></ul>
+      <h3>Add Record</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">List Name</label>
+          <input type="text" name="" id="text" placeholder="List Name" />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Add Number <br />
+            (+ income, -deduct)</label
+          >
+          <input type="number" name="" id="amount" placeholder="Add Number" />
+        </div>
+        <button class="btn">Add List</button>
+      </form>
+    </div>
+  </body>
+</html>
